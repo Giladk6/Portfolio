@@ -5,7 +5,7 @@ Junior DevOps Engineer
 🔗 LinkedIn: https://linkedin.com/in/gilad-koren-devops  
   
   
-🧾 Professional Summary  
+🧾 Professional Summary
 IT and System Administrator with 13+ years of experience in infrastructure and Linux systems. Over the  
 past year, I have focused on transitioning into the DevOps field through intensive self-learning,  
 completing multiple practical labs and projects using AWS, Jenkins, Docker, k8s, Helm, and Terraform.  
