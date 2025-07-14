@@ -11,8 +11,9 @@ past year, I have focused on transitioning into the DevOps field through intensi
 completing multiple practical labs and projects using AWS, Jenkins, Docker, k8s, Helm, and Terraform.  
 I’m now seeking my first official DevOps role where I can leverage my strong operational background  
 and continue building real-world DevOps experience.  
-  
-  
+    
+
+🛠 Tools & Technologies
 | Category                   | Tools & Platforms                 |
 | -------------------------- | --------------------------------- |
 | **CI/CD**                  | Jenkins, Nexus, SonarQube, Slack  |
