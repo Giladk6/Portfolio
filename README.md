@@ -4,6 +4,7 @@ Junior DevOps Engineer
 🔗 GitHub: https://github.com/Giladk6
 🔗 LinkedIn: https://linkedin.com/in/gilad-koren-devops
 
+
 🧾 Professional Summary
 IT and System Administrator with 13+ years of experience in infrastructure and Linux systems. Over the 
 past year, I have focused on transitioning into the DevOps field through intensive self-learning, 
