@@ -12,7 +12,7 @@ completing multiple practical labs and projects using AWS, Jenkins, Docker, k8s,
 I’m now seeking my first official DevOps role where I can leverage my strong operational background  
 and continue building real-world DevOps experience.  
     
-
+  
 🛠 Tools & Technologies
 | Category                   | Tools & Platforms                 |
 | -------------------------- | --------------------------------- |
@@ -21,24 +21,15 @@ and continue building real-world DevOps experience.
 | **Infrastructure as Code** | Terraform, Vagrant                |
 | **Containers**             | Docker, Kubernetes (k8s), Helm    |
 | **Scripting & Others**     | Git, Bash, Linux,                 |
-
-
-🚀 Projects  
   
-📦 Lift & Shift to AWS – *vProfile Project*  
--   Migrated a monolithic Java web application to AWS using EC2, RDS (MySQL), S3, IAM, and Classic Load Balancer.  
--   Focused on manual deployment, security best practices, and core AWS networking.  
   
-🏗️ Re-Architect for AWS – *vProfile Project*  
--   Redesigned infrastructure for scalability and high availability.  
--   Implemented Auto Scaling Group, Multi-AZ RDS, Application Load Balancer, Route53 DNS, and CloudWatch.  
-  
-🐳 Containerization – *Microservices Conversion*  
+🚀 Projects:  
+   
+🐳 Containerization: – *Microservices Conversion*  
 -   Broke down the application into microservices and created Dockerfiles for each service.  
 -   Used Docker Compose to orchestrate local development and testing environments.  
   
-🔁 CI Pipeline – Jenkins, Git-Actions, Nexus, SonarQube, Slack.  
-- Built a complete CI pipeline triggered on Git push:  
+🔁 CI Pipeline with Jenkins, SCM, Nexus, SonarQube, Slack:  
 - Code pulled from GitHub  
 - Static code analysis with SonarQube  
 - Build with Maven  
@@ -46,18 +37,20 @@ and continue building real-world DevOps experience.
 - Slack notifications sent upon success/failure  
 - Managed Jenkins jobs with parameters and credentials securely.  
   
-☁️ CI on AWS  
-- Deployed Jenkins on an AWS EC2 instance.  
-- Managed IAM roles and security groups for restricted access.  
-- Automated application deployment to cloud environments.  
+☁️ CI with AWS Pipeline:  
+- Managed IAM roles and security groups to enforce secure and restricted access.  
+- CI pipeline using AWS CodePipeline integrating CodeCommit, CodeBuild, SonarCloud, 
+  CodeArtifact/Nexus and Slack for full application lifecycle automation.  
   
-🧱 Terraform Project – AWS VPC & EKS  
+🛠 Terraform with AWS resources Provisioning – Hands-on Project's:  
+- provider configuration and access_token authentication.  
+- vpc, Multi-AZ, subnets (Public + Private), security groups,   
+- Route Table, and instance resources (AMI).      
+- Used variables.tf for clean parameter management.  
+  
+🧱 Terraform: AWS VPC, EKS, ECR, S3, Helm and Automated CICD with Git-Actions.  
 - Built a complete cloud infrastructure with Terraform modules:  
-- Custom VPC, subnets (public/private), NAT gateway, Internet Gateway  
-- EKS cluster with worker node group  
-- IAM roles, security groups, and outputs  
-- Connected Jenkins to deploy containerized workloads into EKS.  
-  
-
-
-      
+- Custom VPC, subnets (public/private), NAT gateway, Internet Gateway.  
+- EKS cluster with node-group, IAM roles, s3, security groups.  
+- Creating Helm charts for workload deployments on EKS.  
+- Automated CICD with Git-Actions. 
