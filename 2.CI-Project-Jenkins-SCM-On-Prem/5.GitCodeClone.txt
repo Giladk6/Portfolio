@@ -1,0 +1,25 @@
+# Set git username and email
+git config --global user.email "YOUR Email Address"
+git config --global user.name "YOUR Username"
+
+# Generate SSH keys
+cd
+cd ~/.ssh
+ls
+ssh-keygen
+Enter your GitHub account name
+ls
+cat PublicKey.pub
+
+# Create ssh config file for GitHub account
+vim ~/.ssh/config
+Host github.com-GitHubUsername
+  User git
+  IdentityFile ~/.ssh/GitHubUsername
+  HostName github.com
+
+# Clone source code
+cd
+mkdir PathToCloneRepo
+cd PathToCloneRepo
+git clone git@github.com-GitHubUsername:GtHubUsername/vprofile-project.git
