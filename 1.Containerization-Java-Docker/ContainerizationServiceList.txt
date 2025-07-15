@@ -1,0 +1,56 @@
+Tools Versions:
+MySQL (Database SVC)        => 8.0.33
+Memcache (DB Caching SVC)   => 1.6
+RabbitMQ (Broker/Queue SVC) => 4.0
+JDK                         => JDK 21
+MAVEN                       => Maven 3.9.9
+Tomcat (Application SVC)    => 10, jdk21
+Nginx (Web SVC)             => 1.27
+
+
+Docker Images:
+mysql:8.0.33
+memcache:latest
+rabbitmq:latest
+maven:3.9.9-eclipse-temurin-21-jammy
+tomcat:10-jdk21
+nginx:latest
+
+
+Plan:
+5 Conrainers:
+db
+  Dockerfile
+  ContainerName: vprodb
+  ports:3306:3306
+  password: MYSQL_ROOT_PASSWORD
+  Volume: /var/lib/mysql
+
+mc
+  Image: 
+  ContainerName: vprocache01
+  Ports: 11211:11211
+
+rmq
+  Image
+  ContainerName: vpromq01
+  Ports: 5672:5672
+  Variables:
+    user: guest
+    Password: guest
+
+app
+  Dockerfile
+  ContainerName: vproapp
+  Ports: 8080:8080
+  Volume: /usr/local/tomcat/webapps
+
+
+web
+  Dockerfile
+  ContainerName: vproweb
+  Ports: 80:80
+
+
+Access token
+docker login -u USER_NAME
