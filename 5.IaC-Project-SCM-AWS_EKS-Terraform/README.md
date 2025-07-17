@@ -6,7 +6,7 @@
 - Creating Helm charts for workload deployments on EKS.  
 - Automated CICD with Git-Actions. (PR & manually).  
 - Git Repository for AWS infrastructure:  
-- https://github.com/Giladk6/iaac-vprofile.git  
+- https://github.com/Giladk6/iaac-vprofile.git/  
    
 Git Repository for Helm charts & WebApp source code  
 https://github.com/Giladk6/vprofile-actions.git  
