@@ -1,8 +1,8 @@
-##💼 Gilad Koren | DevOps Portfolio  
-#👨‍💻 DevOps Engineer  
-#📧 Email: Giladk6@gmail.com  
-#🔗 GitHub: https://github.com/Giladk6  
-#🔗 LinkedIn: https://linkedin.com/in/gilad-koren-devops  
+💼 Gilad Koren | DevOps Portfolio  
+👨‍💻 DevOps Engineer  
+📧 Email: Giladk6@gmail.com  
+🔗 GitHub: https://github.com/Giladk6  
+🔗 LinkedIn: https://linkedin.com/in/gilad-koren-devops  
   
   
 🧾 Professional Summary  
