@@ -8,7 +8,7 @@
 Git Repository for AWS infrastructure:  
 https://github.com/Giladk6/iaac-vprofile.git  
   
-Git Repository For Java web app CICD  
+Git Repository for Helm charts & WebApp source code  
 https://github.com/Giladk6/vprofile-actions.git  
   
 🧱 Infrastructure Diagram  
