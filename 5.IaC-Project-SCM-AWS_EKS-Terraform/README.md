@@ -1,4 +1,4 @@
-# 🧱 Terraform: AWS VPC, EKS, ECR, S3, Helm, and Automated CI/CD with GitHub Actions  
+# 🧱 Terraform: AWS VPC, EKS, ECR, S3, Helm, and CI/CD with GitHub Actions  
    
 Provisioned a complete cloud infrastructure using Terraform modules, including:    
   •	Custom VPC, public/private subnets, NAT Gateway, and Internet Gateway   
@@ -25,13 +25,13 @@ Provisioned a complete cloud infrastructure using Terraform modules, including:
   ├── outputs.tf   
   └── variables.tf   
    
-⚙️ GitHub Actions – Terraform Workflow  
+# ⚙️ GitHub Actions – Terraform Workflow  
   📁 .github/workflows/terraform.yml  
   Located at:  
     5.IaC-Project-SCM-AWS_EKS-Terraform/iaac-vprofile/terraform/.github/workflows/  
 
       
-🚀 Helm Charts – vProfile Application   
+# 🚀 Helm Charts – vProfile Application   
   📁 5.IaC-Project-SCM-AWS_EKS-Terraform/vprofile-actions/helm/vprofilecharts/templates/   
   ├── app-secret.yml  
   ├── db-CIP.yml  
@@ -44,13 +44,13 @@ Provisioned a complete cloud infrastructure using Terraform modules, including:
   ├── vprodbdep.yml  
   └── vproingress.yaml  
    
-🔁 GitHub Actions – vProfile CI Workflow  
+# 🔁 GitHub Actions – vProfile CI Workflow  
   📁 .github/workflows/main.yml  
   Located at:  
     5.IaC-Project-SCM-AWS_EKS-Terraform/vprofile-actions/.github/workflows/  
    
   
-🛠️ AWS Prerequisites  
+# 🛠️ AWS Prerequisites  
   1.Create a new IAM user <Gitops> and attach AdministratorAccess policy  
   2.Create an SSH key for GitHub Actions  
   3.Install the AWS CLI and configure via. terminal using: "aws configure"  
@@ -62,7 +62,7 @@ Provisioned a complete cloud infrastructure using Terraform modules, including:
   6.	Create a new S3 bucket in the desired AWS region  
   
     
-🔐 GitHub Actions – Secrets Configuration  
+# 🔐 GitHub Actions – Secrets Configuration  
   For iaac-vprofile repository:  
   repository Settings > Secrets and Variables > Actions > New repository secret  
     •	AWS_ACCESS_KEY_ID = your_key  
@@ -101,5 +101,5 @@ Set SSH for GitHub Actions
     terraform plan -out planfile  
     terraform apply  
     
-✅ The AWS infrastructure will be built in 10–20 minutes.  
+# ✅ The AWS infrastructure will be built in 10–20 minutes.  
    
