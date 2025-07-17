@@ -1,108 +1,105 @@
-🧱 Terraform: AWS VPC, EKS, ECR, S3, Helm and Automated CICD with Git-Actions  
-  
-- Built a complete cloud infrastructure with Terraform modules.  
-- Custom VPC, subnets (public/private), NAT gateway, Internet Gateway.  
-- EKS cluster with node-group, IAM roles, s3 for tfstate backup, security groups.  
-- Creating Helm charts for workload deployments on EKS.  
-- Automated CICD with Git-Actions. (PR & manually).  
-  
-  
-Git Repository for AWS infrastructure:  
-https://github.com/Giladk6/iaac-vprofile.git  
-  
-Git Repository for Helm charts & WebApp source code  
-https://github.com/Giladk6/vprofile-actions.git  
-  
-🧱 Infrastructure Diagram  
-../assets/5.IaaC-Project-SCM-AWS_EKS-Terraform  
-  
-☁️ AWS Resources – Terraform  
-Location:  
-5.IaC-Project-SCM-AWS_EKS-Terraform/iaac-vprofile/terraform/  
-├── main.tf  
-├── vpc.tf  
-├── eks-cluster.tf  
-├── terraform.tf  
-├── outputs.tf  
-└── variables.tf  
-  
-⚙️ GitHub Actions – Terraform Workflow  
-Location:  
-5.IaC-Project-SCM-AWS_EKS-Terraform/iaac-vprofile/terraform/.github/workflows/  
-└── terraform.yml  
-
-
-
-🚀 Helm Charts – vProfile Application  
-Location:  
-5.IaC-Project-SCM-AWS_EKS-Terraform/vprofile-action/helm/vprofilecharts/templates/  
-├── app-secret.yml  
-├── db-CIP.yml  
-├── mc-CIP.yml  
-├── mcdep.yml  
-├── rmq-CIP-service.yml  
-├── rmq-dep.yml  
-├── vproappdep.yml  
-├── vproapp-service.yml  
-├── vprodbdep.yml  
-└── vproingress.yaml  
-  
-🔁 GitHub Actions – vProfile App CI Workflow  
-Location:  
-5.IaC-Project-SCM-AWS_EKS-Terraform/vprofile-action/.github/workflows/  
-└── main.yml  
-  
-  
-AWS prerequisite:  
-1.Create new IAM -user (Gitops), attach security policy > admin access  
-2.Create new SSH key for GitActions  
-3.download and install AWS-cli  
-4.Open terminal and type aws configure, enter your AWS info:  
-  a.AWS Access Key ID  =  key_value  
-  b.AWS Secret Access Key  =  key_value  
-  c.Default region name  =  REGION_NAME  
-  d.json  
-5.Create new Repository in ECR  
-6.Create new s3 bucket under the desired AWS region  
-  
-  
-GIT Actions prerequisite:  
-1.Create GitHub SSH Key: Account settings > SSH and GPG keys > New_SSH_key  
-2.Add AWS access key to iaac-vprofile Git Repository secrets:   
-  iaac-vprofile repository > repository settings > Secrets and Variables > Actions > New Repository secrets  
-  a.AWS_ACCESS_KEY_ID  =  key_value  
-  b.AWS_SECRET_ACCESS_KEY  =  Key_value  
-  c.BUCKET_TF_STATE  =  BUCKET_NAME  
-3.Add AWS, ECR and SonarCloud access key to vprofile-actions Git Repository secrets:   
-  vprofile-actions repository > repository settings > Secrets and Variables > Actions > New Repository secrets  
-  a.AWS_ACCESS_KEY_ID  =  key_value  
-  b.AWS_SECRET_ACCESS_KEY  =  Key_value  
-  c.REGISTRY  =  URI of ECR repository  
-  d.SONAR_ORGANIZATION  =  Key_value  
-  e.SONAR_PROJECT_KEY  =  Key_value  
-  f.SONAR_TOKEN  =  Key_value  
-  g.SONAR_URL  =  https://sonarcloud.io  
-4.opena new terminal on personal laptop:  
-  a.config core.sshCommand "ssh -i ~/.ssh/gitActions -F /dev/null"  
-  b.git config --global user.name <GitHub_account_name>  
-  c.git config --global user.email <Account_Email_Addresss>  
-5.Create new  folder > cd into this folder:  
-  git clone https://github.com/Giladk6/iaac-vprofile.git   
-  git clone https://github.com/Giladk6/vprofile-actions.git  
-  
-Tools required:  
-Terraform version 1.12.2  
+🧱 Terraform: AWS VPC, EKS, ECR, S3, Helm, and Automated CI/CD with GitHub Actions  
    
-Steps:    
+Provisioned a complete cloud infrastructure using Terraform modules, including:    
+  •	Custom VPC, public/private subnets, NAT Gateway, and Internet Gateway   
+  •	EKS Cluster with worker node group, IAM roles, security groups, and remote S3 backend for state storage   
+  •	Helm charts to deploy the vProfile application on EKS   
+  •	CI/CD pipelines using GitHub Actions (manual and pull request triggered workflows)   
+     
+📁 GitHub Repositories   
+  • AWS Infrastructure (Terraform):  
+    🔗 https://github.com/Giladk6/iaac-vprofile.git  
+   
+  •	Helm Charts & WebApp Source Code:  
+    🔗 https://github.com/Giladk6/vprofile-actions.git  
+   
+📊 Infrastructure Diagram  
+  📍 ../assets/5.IaaC-Project-SCM-AWS_EKS-Terraform  
+    
+☁️ AWS Resources (Terraform)  
+  📁 5.IaC-Project-SCM-AWS_EKS-Terraform/iaac-vprofile/terraform/   
+  ├── main.tf  
+  ├── vpc.tf  
+  ├── eks-cluster.tf  
+  ├── terraform.tf  
+  ├── outputs.tf   
+  └── variables.tf   
+   
+⚙️ GitHub Actions – Terraform Workflow  
+  📁 .github/workflows/terraform.yml  
+  Located at:  
+    5.IaC-Project-SCM-AWS_EKS-Terraform/iaac-vprofile/terraform/.github/workflows/  
+
+      
+🚀 Helm Charts – vProfile Application   
+  📁 5.IaC-Project-SCM-AWS_EKS-Terraform/vprofile-actions/helm/vprofilecharts/templates/   
+  ├── app-secret.yml  
+  ├── db-CIP.yml  
+  ├── mc-CIP.yml  
+  ├── mcdep.yml  
+  ├── rmq-CIP-service.yml  
+  ├── rmq-dep.yml  
+  ├── vproappdep.yml  
+  ├── vproapp-service.yml  
+  ├── vprodbdep.yml  
+  └── vproingress.yaml  
+   
+🔁 GitHub Actions – vProfile CI Workflow  
+  📁 .github/workflows/main.yml  
+  Located at:  
+    5.IaC-Project-SCM-AWS_EKS-Terraform/vprofile-actions/.github/workflows/  
+   
   
-cd to /project_name/iaac-vprofile  
+🛠️ AWS Prerequisites  
+  1.Create a new IAM user <Gitops> and attach AdministratorAccess policy  
+  2.Create an SSH key for GitHub Actions  
+  3.Install the AWS CLI and configure via. terminal using: "aws configure"  
+    o	AWS Access Key ID  
+    o	AWS Secret Access Key  
+    o	Default region  
+    o	Output format (json)  
+  5.	Create a new ECR repository  
+  6.	Create a new S3 bucket in the desired AWS region  
   
-terraform init   
-terraform fmt -check  
-terraform validate   
-terraform plan -out planfile  
-terraform apply  
+    
+🔐 GitHub Actions – Secrets Configuration  
+  For iaac-vprofile repository:  
+  repository Settings > Secrets and Variables > Actions > New repository secret  
+    •	AWS_ACCESS_KEY_ID = your_key  
+    •	AWS_SECRET_ACCESS_KEY = your_secret  
+    •	BUCKET_TF_STATE = your_s3_bucket_name  
+   
+  For vprofile-actions repository:  
+  repository Settings > Secrets and Variables > Actions > New repository secret  
+    •	AWS_ACCESS_KEY_ID = your_key  
+    •	AWS_SECRET_ACCESS_KEY = your_secret  
+    •	REGISTRY = URI of your AWS ECR repository  
+    •	SONAR_ORGANIZATION = your_key  
+    •	SONAR_PROJECT_KEY = your_key  
+    •	SONAR_TOKEN = your_key  
+    •	SONAR_URL = https://sonarcloud.io  
   
-The AWS infrastructure will be built in 10-20 minutes.
-  
-  
+    
+💻 Local Git Setup  
+# Set SSH for GitHub Actions  
+  git config core.sshCommand "ssh -i ~/.ssh/gitActions -F /dev/null"  
+# Configure Git user  
+  git config --global user.name "<your_github_username>"  
+  git config --global user.email "<your_email>"  
+# Then clone the repositories:  
+  git clone https://github.com/Giladk6/iaac-vprofile.git  
+  git clone https://github.com/Giladk6/vprofile-actions.git  
+    
+🧰 Tools Required  
+•	Terraform version 1.12.2  
+      
+🚀 Deployment Steps:  
+  cd iaac-vprofile/terraform/  
+    terraform init  
+    terraform fmt -check  
+    terraform validate  
+    terraform plan -out planfile  
+    terraform apply  
+    
+✅ The AWS infrastructure will be built in 10–20 minutes.  
+   
