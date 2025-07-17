@@ -91,7 +91,7 @@ Set SSH for GitHub Actions
   git clone https://github.com/Giladk6/vprofile-actions.git  
     
 # 🧰 Tools Required  
-•	Terraform version 1.12.2  
+•	Terraform version 1.6.3  
       
 # 🚀 Deployment Steps:  
   cd iaac-vprofile/terraform/  
