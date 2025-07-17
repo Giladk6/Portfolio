@@ -18,7 +18,7 @@ and continue building real-world DevOps experience.
 | -------------------------- | --------------------------------- |
 | **CI/CD**                  | Jenkins, Nexus, SonarQube, Slack  |
 | **Cloud Platforms**        | AWS (EC2, ALB, RDS, S3, EKS, IAM) |
-| **Infrastructure as Code** | Terraform, Vagrant                |
+| **Infrastructure as Code** | Terraform, Vagrant, Ansible       |
 | **Containers**             | Docker, Kubernetes, Helm          |
 | **Scripting & Others**     | Git, Bash, Python, Linux,         |
   
