@@ -1,10 +1,10 @@
 🧱 Terraform: AWS VPC, EKS, ECR, S3, Helm and Automated CICD with Git-Actions  
   
-Built a complete cloud infrastructure with Terraform modules.  
-Custom VPC, subnets (public/private), NAT gateway, Internet Gateway.  
-EKS cluster with node-group, IAM roles, s3 for tfstate backup, security groups.  
-Creating Helm charts for workload deployments on EKS.  
-Automated CICD with Git-Actions. (PR & manually).  
+- Built a complete cloud infrastructure with Terraform modules.  
+- Custom VPC, subnets (public/private), NAT gateway, Internet Gateway.  
+- EKS cluster with node-group, IAM roles, s3 for tfstate backup, security groups.  
+- Creating Helm charts for workload deployments on EKS.  
+- Automated CICD with Git-Actions. (PR & manually).  
 \
 Git Repository for AWS infrastructure:  
 https://github.com/Giladk6/iaac-vprofile.git/  
