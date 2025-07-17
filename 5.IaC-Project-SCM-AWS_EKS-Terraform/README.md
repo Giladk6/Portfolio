@@ -17,12 +17,12 @@ https://github.com/Giladk6/vprofile-actions.git
 ☁️ AWS Resources – Terraform  
 Location:  
 5.IaC-Project-SCM-AWS_EKS-Terraform/iaac-vprofile/terraform/  
-├── main.tf
-├── vpc.tf
-├── eks-cluster.tf
-├── terraform.tf
-├── outputs.tf
-└── variables.tf
+├── main.tf  
+├── vpc.tf  
+├── eks-cluster.tf  
+├── terraform.tf  
+├── outputs.tf  
+└── variables.tf  
   
 ⚙️ GitHub Actions – Terraform Workflow  
 Location:  
@@ -34,15 +34,15 @@ Location:
 Location:  
 5.IaC-Project-SCM-AWS_EKS-Terraform/vprofile-action/helm/vprofilecharts/templates/  
 ├── app-secret.yml  
-├── db-CIP.yml 
+├── db-CIP.yml  
 ├── mc-CIP.yml  
 ├── mcdep.yml  
 ├── rmq-CIP-service.yml  
-├── rmq-dep.yml 
-├── vproappdep.yml 
-├── vproapp-service.yml 
-├── vprodbdep.yml 
-└── vproingress.yaml
+├── rmq-dep.yml  
+├── vproappdep.yml  
+├── vproapp-service.yml  
+├── vprodbdep.yml  
+└── vproingress.yaml  
   
 🔁 GitHub Actions – vProfile App CI Workflow  
 Location:  
