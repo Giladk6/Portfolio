@@ -9,7 +9,7 @@
 - https://github.com/Giladk6/iaac-vprofile.git/  
    
 Git Repository for Helm charts & WebApp source code  
-https://github.com/Giladk6/vprofile-actions.git  
+https://github.com/Giladk6/vprofile-actions.git/  
   
 🧱 Infrastructure Diagram  
 ../assets/5.IaaC-Project-SCM-AWS_EKS-Terraform  
