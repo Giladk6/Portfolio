@@ -16,7 +16,7 @@ and continue building real-world DevOps experience.
 🛠 Tools & Technologies
 | Category                   | Tools & Platforms                 |
 | -------------------------- | --------------------------------- |
-| **CI/CD**                  | Jenkins, Nexus, SonarQube, Slack  |
+| **CI/CD**                  | Jenkins, GitActions, CodePipeline |
 | **Cloud Platforms**        | AWS (EC2, ALB, RDS, S3, EKS, IAM) |
 | **Infrastructure as Code** | Terraform, Vagrant, Ansible       |
 | **Containers**             | Docker, Kubernetes, Helm          |
