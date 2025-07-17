@@ -103,6 +103,6 @@ terraform validate
 terraform plan -out planfile  
 terraform apply  
   
-AWS infrastructure will get build in some time.  
+The AWS infrastructure will be built in 10-20 minutes.
   
   
