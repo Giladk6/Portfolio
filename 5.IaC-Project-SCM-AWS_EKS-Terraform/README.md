@@ -1,4 +1,4 @@
-🧱 Terraform: AWS VPC, EKS, ECR, S3, Helm, and Automated CI/CD with GitHub Actions  
+# 🧱 Terraform: AWS VPC, EKS, ECR, S3, Helm, and Automated CI/CD with GitHub Actions  
    
 Provisioned a complete cloud infrastructure using Terraform modules, including:    
   •	Custom VPC, public/private subnets, NAT Gateway, and Internet Gateway   
@@ -6,17 +6,17 @@ Provisioned a complete cloud infrastructure using Terraform modules, including:
   •	Helm charts to deploy the vProfile application on EKS   
   •	CI/CD pipelines using GitHub Actions (manual and pull request triggered workflows)   
      
-📁 GitHub Repositories   
+# 📁 GitHub Repositories   
   • AWS Infrastructure (Terraform):  
     🔗 https://github.com/Giladk6/iaac-vprofile.git  
    
   •	Helm Charts & WebApp Source Code:  
     🔗 https://github.com/Giladk6/vprofile-actions.git  
    
-📊 Infrastructure Diagram  
+# 📊 Infrastructure Diagram  
   📍 ../assets/5.IaaC-Project-SCM-AWS_EKS-Terraform  
     
-☁️ AWS Resources (Terraform)  
+# ☁️ AWS Resources (Terraform)  
   📁 5.IaC-Project-SCM-AWS_EKS-Terraform/iaac-vprofile/terraform/   
   ├── main.tf  
   ├── vpc.tf  
@@ -80,20 +80,20 @@ Provisioned a complete cloud infrastructure using Terraform modules, including:
     •	SONAR_URL = https://sonarcloud.io  
   
     
-💻 Local Git Setup  
-# Set SSH for GitHub Actions  
+# 💻 Local Git Setup  
+Set SSH for GitHub Actions  
   git config core.sshCommand "ssh -i ~/.ssh/gitActions -F /dev/null"  
-# Configure Git user  
+  Configure Git user  
   git config --global user.name "<your_github_username>"  
   git config --global user.email "<your_email>"  
-# Then clone the repositories:  
+  Then clone the repositories:  
   git clone https://github.com/Giladk6/iaac-vprofile.git  
   git clone https://github.com/Giladk6/vprofile-actions.git  
     
-🧰 Tools Required  
+# 🧰 Tools Required  
 •	Terraform version 1.12.2  
       
-🚀 Deployment Steps:  
+# 🚀 Deployment Steps:  
   cd iaac-vprofile/terraform/  
     terraform init  
     terraform fmt -check  
