@@ -8,13 +8,13 @@ Automated CICD with Git-Actions. (PR & manually).
 \
 Git Repository for AWS infrastructure:  
 https://github.com/Giladk6/iaac-vprofile.git/  
-\
+  
 Git Repository for Helm charts & WebApp source code  
 https://github.com/Giladk6/vprofile-actions.git/  
-\ 
+  
 🧱 Infrastructure Diagram  
 ../assets/5.IaaC-Project-SCM-AWS_EKS-Terraform  
-\ 
+  
 ☁️ AWS Resources – Terraform  
 Location:  
 5.IaC-Project-SCM-AWS_EKS-Terraform/iaac-vprofile/terraform/  
@@ -24,7 +24,7 @@ Location:
 ├── terraform.tf  
 ├── outputs.tf  
 └── variables.tf  
- \ 
+  
 ⚙️ GitHub Actions – Terraform Workflow  
 Location:  
 5.IaC-Project-SCM-AWS_EKS-Terraform/iaac-vprofile/terraform/.github/workflows/  
