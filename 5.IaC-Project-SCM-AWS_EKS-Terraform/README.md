@@ -54,10 +54,10 @@ Provisioned a complete cloud infrastructure using Terraform modules, including:
   1.Create a new IAM user <Gitops> and attach AdministratorAccess policy  
   2.Create an SSH key for GitHub Actions  
   3.Install the AWS CLI and configure via. terminal using: "aws configure"  
-    o	AWS Access Key ID  
-    o	AWS Secret Access Key  
-    o	Default region  
-    o	Output format (json)  
+    -	AWS Access Key ID  
+    -	AWS Secret Access Key  
+    -	Default region  
+    -	Output format (json)  
   5.	Create a new ECR repository  
   6.	Create a new S3 bucket in the desired AWS region  
   
