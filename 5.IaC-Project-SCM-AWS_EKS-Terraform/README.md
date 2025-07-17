@@ -50,7 +50,14 @@ Location:
 Location:  
 5.IaC-Project-SCM-AWS_EKS-Terraform/vprofile-action/.github/workflows/  
 └── main.yml  
-  
+
+
+prerequisite:  
+on AWS:  
+
+
+
+
 Tools required  
 Terraform version 1.12.2  
   
