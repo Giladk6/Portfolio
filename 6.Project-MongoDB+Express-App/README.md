@@ -1,4 +1,4 @@
-1.🧱 Source Code - Prerequisites & Build
+# 1.🧱 Source Code - Prerequisites & Build
 Prepared the Node.js project for Docker containerization.
 - Installed Node.js dependencies: npm 11.4.2, nvm 24.4.0
 - Initialized project: npm init -y
@@ -6,16 +6,16 @@ Prepared the Node.js project for Docker containerization.
 - Installed required packages: express@4.19.2, mongoose@8.5.1, body-parser@1.20.2, nodemon@3.1.4
 - Built Docker image and pushed to container registry
 
-📁 Project Structure
+# 📁 Project Structure
 - ~/Project-MongoDB/1.Color-api-2.0.0_Source-code
 
-💻 Tools Required
+# 💻 Tools Required
 - Node.js
 - npm
 - Docker
 
 
-2.🧱 MongoDB StatefulSet Deployment & DB Initialization
+# 2.🧱 MongoDB StatefulSet Deployment & DB Initialization
 Deployed MongoDB as a StatefulSet on Kubernetes using dynamic NFS provisioning.
 
 - Used dynamic NFS StorageClass: nfs-client
@@ -27,15 +27,15 @@ Deployed MongoDB as a StatefulSet on Kubernetes using dynamic NFS provisioning.
 - mongodb-Headless-svc.yaml
 - mongodb-ss.yaml
 
-📁 Project Structure
+# 📁 Project Structure
 - Project-MongoDB+Express-App/2.MongoDB-SS
 
-💻 Tools Required
+# 💻 Tools Required
 - Kubernetes cluster
 - NFS dynamic provisioner
 
 
-3.🧱 Color API App - Deployment & Testing
+# 3.🧱 Color API App - Deployment & Testing
 Deployed the Color API application as a Kubernetes Deployment with NodePort service and tested API functionality.
 
 - Applied deployment manifest: color-api-deployment.yaml
@@ -55,10 +55,10 @@ Deployed the Color API application as a Kubernetes Deployment with NodePort serv
 - Tested dynamic traffic: POST /api/color/primary { "value": "yellow" }
 - Cleaned up traffic-generator
 
-📁 Project Structure
+# 📁 Project Structure
 - Project-MongoDB+Express-App/3.Color-API-Deployment
 
-💻 Tools Required
+# 💻 Tools Required
 - Kubernetes cluster
 - Docker
 - Postman
