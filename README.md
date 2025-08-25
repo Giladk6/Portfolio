@@ -25,7 +25,7 @@ and continue building real-world DevOps experience.
   
 🚀 Projects:  
    
-🐳 Containerization: – *Microservices Conversion*  
+🐳 Containerization: *Microservices Conversion*  
 -   Broke down the application into microservices and created Dockerfiles for each service.  
 -   Used Docker Compose to orchestrate local development and testing environments.  
   
@@ -42,16 +42,23 @@ and continue building real-world DevOps experience.
 - CI pipeline using AWS CodePipeline integrating CodeCommit, CodeBuild, SonarCloud, 
   CodeArtifact/Nexus and Slack for full application lifecycle automation.  
   
-🛠 Provisioning AWS resources with Terraform – Hands-on Project's:  
+🛠 Provisioning AWS resources with Terraform:  
 - provider configuration and access_token authentication.  
 - vpc, Multi-AZ, subnets (Public + Private), security groups,   
 - Route Table, and instance resources (AMI).      
 - Used variables.tf for clean parameter management.  
   
-🧱 Terraform: AWS VPC, EKS, ECR, S3, Helm and Automated CICD with Git-Actions.  
+🧱 Terraform: AWS VPC, EKS, ECR, S3, Helm and Automated CICD with Git-Actions:
 - Built a complete cloud infrastructure with Terraform modules:  
 - Custom VPC, subnets (public/private), NAT gateway, Internet Gateway.  
 - EKS cluster with node-group, IAM roles, s3 for tfstate backup, security groups.  
 - Creating Helm charts for workload deployments on EKS.  
 - Automated CICD with Git-Actions. (PR & manually).  
   
+🐘 MongoDB + Express App – Containerization & k8s Deployment:
+- Built a Docker image for a MongoDB + Express application and pushed it to a container registry.
+- Deployed the application as a StatefulSet on a Kubernetes cluster to manage persistent data.
+- Used an NFS-backed StorageClass with dynamic volume provisioning for MongoDB persistence.
+- Managed Kubernetes manifests including StatefulSet, Services, and ConfigMaps for proper deployment.
+- Implemented environment variables and secrets management for secure configuration.
+- Verified deployment with kubectl commands and tested the app running in the cluster.
