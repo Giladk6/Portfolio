@@ -1,0 +1,14 @@
+mongodb-ss.yaml:
+StorageClass setup is dynamic-nfs - storageClassName: nfs-client
+Changing to NodePath storage -> storageClassName: standard
+
+****when using standard storage, the mongodb pod must be scheduled on the same 
+node that has the local path available****
+
+cd Project-MongoDB+Express-App/2.MongoDB-SS/
+
+1.kubectl apply -f mongodb-root-creds.yaml
+2.kubectl apply -f mongodb-colordb-creds.yaml
+3.kubectl apply -f mongodb-init-colordb.yaml
+4.kubectl apply -f mongodb-Headless-svc.yaml
+5.kubectl apply -f mongodb-ss.yaml
